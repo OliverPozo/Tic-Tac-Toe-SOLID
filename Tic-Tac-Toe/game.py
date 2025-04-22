@@ -4,6 +4,10 @@ class Game:
     def __init__(self, player1, player2):
         self.board = Board()
         self.players = [player1, player2]
+        self.current = 0
+        self.over = False
+        self.winner_name = None
+
 
     def start(self):
         current = 0
